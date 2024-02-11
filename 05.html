@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch case  and loop</title>
+    <style>
+        .box{
+            margin: auto;
+        }
+        #btn{
+            margin: 100px 400px;
+          font-size: large;
+          letter-spacing: 1px;
+          text-align: center;
+          background-color: teal;
+          color: white;
+          padding: 20px;
+          box-shadow: 1px 1px 2px rgba(1, 1, 49, 0.3);
+          border-radius: 50px;
+          display: inline-block;
+          cursor: pointer;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="box"><button id="btn">You want to order fruits ?</button></div>
+    <script>
+      let x = document.getElementById("btn");
+      x.addEventListener("click", fal);
+      function fal() {
+        let fruittype = prompt("konsa fruit chahiye ");
+        switch (fruittype) {
+          case "mango":
+            alert("mango 300 rs kilo hai");
+            break;
+          case "apple":
+            alert("apple 100 rs kilo hai");
+            break;
+          case "orange":
+            alert("orange 30 rs kilo hai");
+            break;
+          case "grapes":
+            alert("grapes 40 rs kilo hai");
+            break;
+          case "amrood":
+            alert("amrood 35 rs kilo hai");
+            break;
+          case "banana":
+            alert("banana 50 rs dorjan hai");
+            break;
+          case "strawberry":
+            alert("strawberry 200 rs kilo hai");
+            break;
+          default:
+            alert(`${fruittype} aaj khatam ho gaya hai kal ayega`);
+        }
+        alert("or kuch chahiye kya?");
+      }
+    </script>
+<!-- loop statement -->
+    <script>
+        // for (let i = 5; i < 51; i= i+5){
+        //     console.log(i)
+        // }
+        // console.log("hii")
+        // for (let j = 50; j > 4; j= j-5){
+        //     console.log(j)
+        // }
+
+        for (let k = 0; k < 20; k++){
+            if (k % 2 == 0)
+            document.write(` ${k},`);
+        }
+
+        
+    </script>
+
+</body>
+</html>

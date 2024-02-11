@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>crash course of JS</title>
+    <style>
+      .container {
+        margin: 5px 0;
+        padding: 10px;
+        border: 5px solid pink;
+        background-color: cyan;
+      }
+      .pop_up{
+        background-color: darkgray;
+      }
+      .textcolor{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="firstcont">
+      <h1>this is a crash course of JS with harry</h1>
+      <button id="click" onclick="clicked()">click here</button>
+    </div>
+    <div class="container">
+      <h1>my name is momin mohammad rabeet</h1>
+    </div>
+
+    <script>
+      //ways to print in java script
+      // console.log("hallo world");
+      // alert("me");
+      document.write("hay gyz, there are so many things to learn in js");
+
+      //javascript console API
+      var a = "this is a nature of greenish plants to sve the earth";
+      // console.log(a);
+      // console.log("hallo world");
+      // console.warn("this is warning syntax");
+      // console.error("this in an fake error'only use for e.g'");
+      // console.assert(4==(8-7));
+
+      function avg(a, b) {
+        return (a, b) / 3;
+      }
+      c1 = avg(3, 9);
+      c2 = avg(12, 15);
+      // console.log(c1, c2)
+
+      // var age = 21;
+      // if (age < 8){
+      //     console.log("you are kid")
+      // }
+      // else if (40 >age > 20){
+      //     console.log("u are a man")
+      // }
+      // else if (age < 23){
+      //     console.log("u are not a man")
+      // }
+      // else{
+      //     console.log("you are not a kid any more ")
+      // }
+
+      // var age = 21
+      // if (age < 10){
+      //     console.log("haa aap rasna pee sakte ho")
+      // }
+      // else if (age < 20){
+      //     console.log("bachpana abhi baaki hai")
+      // }
+      // else if (age < 30){
+      //     console.log("bhai kuch sharam karle")
+
+      // }
+      // else{
+      //     console.log("as your wish ")
+      // }
+
+      // var arr = [1,2,3,4,5,6,7,8,9];
+      // console.log(arr);
+      // for(var i = 0;i < arr.length;i++){
+      //     console.log(arr[i])
+      // }
+
+      //this a easy way for loop
+      // arr.forEach(function(Element){
+      // console.log(Element);
+      // })
+
+      // j = 7;
+      // while(j<arr.length){
+      //     console.log(arr[j]);
+      // }
+
+    //   var newarr = ["rabeet", 12342, true, "haroon", 22, 54.87, null];
+    //   newarr.unshift("zohra", 43);
+    //   var x = 5;
+    //   newarr.push(x ** 2);
+    //   console.log(newarr);
+    //   newarr.pop();
+    //   let last = newarr.pop();
+    //   console.log(newarr);
+    //   let pos = newarr.indexOf("zohra");
+
+    //   let myDate = new Date();
+    //   console.log(myDate);
+        let elem = document.getElementById('click');
+        // console.log(elem);
+
+        let elemclass = document.getElementsByClassName('container')
+        // console.log(elemclass);
+        // elemclass[0].style.background = "yellow";
+
+        elemclass[0].classList.add('pop_up')
+        elemclass[0].classList.add('textcolor')
+        elemclass[0].classList.remove('textcolor')
+
+        // console.log(elemclass[0].innerHTML);
+        // console.log(elemclass[0].innerText);
+
+
+        // dem = document.querySelectorAll('.container');
+        // console.log(dem);
+
+
+        function clicked(){
+          // alert('hii gyzs')
+          console.log('this button is clicked')
+        }
+
+        // window.onload = function(){
+        //   console.log('this page is reloaded')
+        // }
+
+        // firstcont.addEventListener('click', function(){
+        //   document.querySelectorAll('.container')[1].innerHTML = '<b> clicked on first container </b>'
+        //   console.log('click hua')
+        // })
+        // firstcont.addEventListener('mouseover', function(){
+        //   console.log('mouse in container')
+        // })
+        // firstcont.addEventListener('mouseout', function(){
+        //   console.log('mouse out hua')
+        // })
+
+        let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+          
+        firstcont.addEventListener('mouseup', function(){
+          document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+          console.log('button chod diya');
+        })
+        
+        firstcont.addEventListener('mousedown', function(){
+          document.querySelectorAll('.container')[1].innerHTML = '<b> clicked on first container </b>';
+          console.log('click karke rakha hai');
+        })
+    </script>
+  </body>
+</html>

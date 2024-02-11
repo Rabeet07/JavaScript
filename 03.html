@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS string funtion</title>
+    <style></style>
+</head>
+<body>
+    <h1>this is java script program</h1>
+
+    <script>
+        var str = 'This is a string';
+        console.log(str);
+        //first accurance of substring
+        var position = str.indexOf('is');
+        console.log(position);
+        
+        //last accurance of substring
+        position = str.lastIndexOf('a');
+        console.log(position);
+        
+        //substring from string 
+        var substr = str.slice(1,4);
+        console.log(substr);
+        var substr1 = str.substring(3,7);
+        console.log(substr1);
+        var substr2 = str.substr(5,13);
+        console.log(substr2);
+        
+        //replaced
+        var replaced = str.replace('string', 'rabeet')
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var newstr = str.concat(' rabeet'); // + operators is better
+        console.log(newstr);
+        var strwithwhitespace = "     sflkjsdf       dsfkhsdkfj    ";
+        console.log(strwithwhitespace);
+        console.log(strwithwhitespace.trim());
+
+        // var char2 = str.charAt(3);
+        var char2 = str.charCodeAt(3);
+        console.log(char2);
+        console.log([5]);
+        
+
+
+
+        
+
+    </script>
+</body>
+</html>

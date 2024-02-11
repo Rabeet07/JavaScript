@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if else statement</title>
+    <style>
+      #btn{
+        font-size: large;
+        letter-spacing: 1px;
+        text-align: center;
+        background-color: teal;
+        color: white;
+        padding: 20px;
+        box-shadow: 1px 1px 2px rgba(1, 1, 49, 0.3);
+        border-radius: 50px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">if you know time click here</button>
+
+    <script>
+      var timebtn = document.getElementById("btn");
+      timebtn.addEventListener("click", wtime);
+      function wtime() {
+        var time = prompt("Hey what's the time : ");
+        if (time > 5 && time < 12) {
+          alert("good marning");
+        } else if (time > 12 && time < 17) {
+          alert("good afternoon");
+        } else {
+          alert("good night");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| strings and strings method |</title>
+</head>
+<body>
+    <h1>strings</h1>
+<div id="container"></div>
+
+    <script>
+        // var string = "this"; or 
+        var string = 'this is ';
+        var name = 'rabeet ';
+        var surname = 'momin ';
+        var emailid = 'mominrabeetn@gmail.com';
+        var temp = `your name is ${name}and his email id is ${emailid}`;
+        console.log(string + name + surname);
+        console.log(temp);
+        var len = name.length;
+        console.log(`the length of name is ${len}`);
+        console.log("Assalamualaikum hazraat \nmy name is rabeet")
+        // var y = new string('this');
+        // console.log(y);
+        document.getElementById('container').innerHTML = '<h3>my name is rabeet</H3>'
+    </script>
+</body>
+</html>
